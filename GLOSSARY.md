@@ -6,10 +6,10 @@ This document defines the authoritative vocabulary for the product domain, Pen D
 
 ## 1. Project Domain Definition
 
-- **Project Name**: `[Your Design Project Name]`
-- **Target Platforms**: `[Web / Mobile iOS / Mobile Android / Desktop]`
-- **Brand Archetype**: `Blueprint Technical`
-- **Primary Product Mission**: `[Brief 1-2 sentence description of what this product solves for users]`
+- **Project Name**: `CraftUI Studio`
+- **Target Platforms**: `Web (1440x900) & Mobile iOS (393x852)`
+- **Brand Archetype**: `Modern Minimal / High-Contrast Editorial`
+- **Primary Product Mission**: `Create modular, commercial-grade UI templates, component systems, and end-to-end user flows for portfolio showcase and digital asset sales.`
 
 ---
 

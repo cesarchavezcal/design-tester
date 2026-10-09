@@ -16,9 +16,13 @@ This file records durable design decisions, brand guidelines, and canvas archite
 
 *Record established brand choices, color palettes, and typographic hierarchies here once onboarded via `/init-project`.*
 
-- **Brand Archetype**: `Pending /init-project onboarding`
-- **Primary Palette**: `Pending`
-- **Typography Scale**: `Pending`
+- **Brand Archetype**: `Modern Minimal / High-Contrast Editorial`
+- **Primary Palette**:
+  - Canvas: `#090D16` (Deep Slate)
+  - Primary Accent: `#6366F1` (Electric Indigo)
+  - Secondary Accent: `#00E5FF` (Vibrant Cyan)
+  - Surfaces: Surface-1 `#111827`, Surface-2 `#1F2937`, Border `#283548`
+- **Typography Scale**: Display & Body: `Inter` (Google Fonts), Monospace: `JetBrains Mono`
 - **Target Viewports**:
   - Mobile: `393 x 852` (iOS standard baseline)
   - Desktop: `1440 x 900` (Web standard baseline)
@@ -29,4 +33,5 @@ This file records durable design decisions, brand guidelines, and canvas archite
 
 | Date | Decision | Context & Rationale | Canvas / File Impact |
 |---|---|---|---|
-| YYYY-MM-DD | Initial Template Setup | Initialized clean Pen Dev Design Agent template repository | `designs/app.pen`, `designs/design-system.pen` |
+| 2026-10-09 | Initial Template Setup | Initialized clean Pen Dev Design Agent template repository | `designs/app.pen`, `designs/design-system.pen` |
+| 2026-10-09 | ADR-001: Commercial UI Template Architecture | Configured CraftUI Studio for portfolio showcase and marketplace digital asset sales. Established shared token foundation in `designs/design-system.pen` and multi-viewport templates in `designs/app.pen`. | `GLOSSARY.md`, `MEMORY.md`, `docs/design-system/DESIGN.md`, `feature_list.json` |

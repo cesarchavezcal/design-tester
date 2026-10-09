@@ -6,9 +6,9 @@ This document defines the baseline design tokens, theme variables, and component
 
 ## 1. Brand Atmosphere & Archetype
 
-- **Selected Archetype**: `Blueprint Technical`
-- **Design Personality**: Clean, structured, high-contrast, token-driven.
-- **Canvas Surface Baseline**: Dark or Light mode according to archetype.
+- **Selected Archetype**: `Modern Minimal / High-Contrast Editorial`
+- **Design Personality**: Premium, sleek, high-contrast, commercial-ready typography and metrics.
+- **Canvas Surface Baseline**: Deep Slate Dark Mode (`#090D16`) with high-contrast surfaces.
 
 ---
 
@@ -17,15 +17,16 @@ This document defines the baseline design tokens, theme variables, and component
 All colors defined here map 1:1 to theme variables in `designs/design-system.pen` (`$color-...`).
 
 ### Core Palette:
-- **`$color-primary`**: `#00E5FF` (Accent fill, active CTA, interactive highlight)
-- **`$color-primary-hover`**: `#00B4D8` (Interactive hover/pressed state)
-- **`$color-primary-muted`**: `rgba(0, 229, 255, 0.15)` (Subtle selection highlight, tag fill)
+- **`$color-primary`**: `#6366F1` (Electric Indigo: primary action CTA, active highlights)
+- **`$color-primary-hover`**: `#4F46E5` (Interactive hover/pressed state)
+- **`$color-primary-muted`**: `rgba(99, 102, 241, 0.15)` (Subtle selection highlight, tag fill)
+- **`$color-secondary`**: `#00E5FF` (Vibrant Cyan: secondary metrics, badges, charts)
 
 ### Surfaces & Backgrounds:
-- **`$color-canvas`**: `#0A0F1D` (Infinite canvas and screen background)
-- **`$color-surface-1`**: `#111A2E` (Elevated cards, list containers, modals)
-- **`$color-surface-2`**: `#1B2742` (Nested cards, inputs, pressed states)
-- **`$color-border`**: `#263659` (Hairline container strokes and dividers)
+- **`$color-canvas`**: `#090D16` (Infinite canvas and screen background)
+- **`$color-surface-1`**: `#111827` (Elevated cards, list containers, modals)
+- **`$color-surface-2`**: `#1F2937` (Nested cards, inputs, pressed states)
+- **`$color-border`**: `#283548` (Hairline container strokes and dividers)
 
 ### Text Hierarchy:
 - **`$color-text-primary`**: `#FFFFFF` (High contrast headings, values, labels)

@@ -1,11 +1,10 @@
-# 🎨 Pen Dev Design Agent Boilerplate (`pen-dev-designer`)
+# 🎨 CraftUI Studio (`design-tester`)
 
-[![GitHub Template](https://img.shields.io/badge/GitHub-Template-blue?logo=github)](https://github.com/cesarchavezcal/pen-dev-designer)
 [![Pen Dev Compatible](https://img.shields.io/badge/Pen.dev-Design%20Canvas-6366f1?logo=figma)](https://pen.dev)
 [![AI Agent Ready](https://img.shields.io/badge/AI%20Agent-Antigravity%20%7C%20Claude%20%7C%20Cursor-emerald)](#)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-> **A battle-tested GitHub Template Repository designed for autonomous AI agents creating digital product designs, design systems, blueprint wireframes, and screen-by-screen user flows on the [Pen Dev (`pen.dev`)](https://pen.dev) infinite canvas.**
+> **Modular, commercial-grade UI templates, component systems, and end-to-end user flows for portfolio showcase and digital asset sales on the [Pen Dev (`pen.dev`)](https://pen.dev) infinite canvas.**
 
 ---
 
