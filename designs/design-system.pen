@@ -1,0 +1,18 @@
+{
+  "version": "2.20",
+  "children": [
+    {
+      "type": "frame",
+      "id": "wWSxy",
+      "x": 0,
+      "y": 0,
+      "name": "Container",
+      "clip": true,
+      "width": 1440,
+      "height": 1024,
+      "fill": "#FFFFFF",
+      "layout": "vertical"
+    }
+  ],
+  "fileToken": "07ac9fc5-f6a5-431f-a147-9fe1e84d6078"
+}

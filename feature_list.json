@@ -1,0 +1,52 @@
+{
+  "features": [
+    {
+      "id": "feat-001",
+      "name": "Design Project Onboarding & Setup",
+      "description": "Interview project concept, define brand archetype, set up design tokens in docs/design-system/DESIGN.md, and initialize designs/ canvas files.",
+      "dependencies": [],
+      "status": "not-started",
+      "evidence": ""
+    },
+    {
+      "id": "feat-002",
+      "name": "Foundational Design System & Theme Variables",
+      "description": "Establish color palette, typography scales, spacing tokens, and core reusable UI components (Buttons, Inputs, Cards, Nav) in designs/design-system.pen.",
+      "dependencies": [
+        "feat-001"
+      ],
+      "status": "not-started",
+      "evidence": ""
+    },
+    {
+      "id": "feat-003",
+      "name": "First User Flow Blueprint Wireframe",
+      "description": "Convert initial planning doc/user story into a low-fidelity Blueprint Technical wireframe to validate structural layout before visual polish.",
+      "dependencies": [
+        "feat-002"
+      ],
+      "status": "not-started",
+      "evidence": ""
+    },
+    {
+      "id": "feat-004",
+      "name": "High-Fidelity Screen-by-Screen User Flow",
+      "description": "Generate full UI screens for each interaction step, complete with directional connector arrows, gesture tags, and decision branches.",
+      "dependencies": [
+        "feat-003"
+      ],
+      "status": "not-started",
+      "evidence": ""
+    },
+    {
+      "id": "feat-005",
+      "name": "Interactive Prototype States & Preview Export",
+      "description": "Model interactive component states (hover, active, sheet open, error toast) and export high-res PNG/PDF previews to docs/previews/.",
+      "dependencies": [
+        "feat-004"
+      ],
+      "status": "not-started",
+      "evidence": ""
+    }
+  ]
+}
