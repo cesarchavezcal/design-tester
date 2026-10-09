@@ -1,10 +1,10 @@
 # Design Agent Skills Catalog (`SKILLS.md`)
 
-This repository integrates 35 workspace-installed agent skills purpose-built for product design, UX planning, and native Pen Dev (`pen.dev`) canvas manipulation.
+This repository integrates 44 workspace-installed and ecosystem agent skills purpose-built for product design, design intelligence, UX planning, and native Pen Dev (`pen.dev`) canvas manipulation.
 
 ---
 
-## 1. The 9 Dedicated Pen Dev Canvas Skills
+## 1. The 10 Dedicated Pen Dev Canvas Skills
 
 | Skill | Trigger / Command | Purpose | Core Deliverable |
 |---|---|---|---|
@@ -21,7 +21,21 @@ This repository integrates 35 workspace-installed agent skills purpose-built for
 
 ---
 
-## 2. Discovery, Planning & Architecture Skills
+## 2. Design Intelligence & Agency Visual Standards
+
+| Skill | Trigger / Command | Purpose |
+|---|---|---|
+| **`ui-ux-pro-max`** | `/ui-ux-pro-max` | Query searchable local database of 84 styles, 192 color palettes, 74 font pairings, 98 UX guidelines, and touch targets (min 44×44px). |
+| **`high-end-visual-design`** | `/high-end-visual-design`| Enforce $150k+ agency standards: double-bezel card enclosures, nested island CTA buttons, and strict anti-slop rules banning generic AI cliches. |
+| **`brandkit`** | `/brandkit` | Studio-grade brand guidelines boards, logo construction grids, and sparse editorial typography systems. |
+| **`impeccable`** | `/impeccable` | Comprehensive design critique, audit, and refinement: `/critique`, `/audit`, `/bolder`, `/quieter`, `/harden`, `/polish`. |
+| **`design-taste-frontend`** | `/design-taste-frontend` | Anti-slop frontend taste engine ensuring layouts never look templated. |
+| **`minimalist-ui`** | `/minimalist-ui` | Clean editorial aesthetic: warm monochrome palette, typographic contrast, and flat bento layouts. |
+| **`industrial-brutalist-ui`** | `/industrial-brutalist-ui`| Raw mechanical aesthetic: Swiss typographic print, declassified blueprints, and high information density. |
+
+---
+
+## 3. Product Discovery, Architecture & UX Skills
 
 | Skill | Trigger / Command | Purpose |
 |---|---|---|
@@ -37,11 +51,12 @@ This repository integrates 35 workspace-installed agent skills purpose-built for
 
 ---
 
-## 3. UX Copy, Microcopy & Communication Skills
+## 4. UX Copy, Microcopy & Communication Skills
 
 | Skill | Trigger / Command | Purpose |
 |---|---|---|
-| **`unslop`** | `/unslop` | Polish UX copy, empty states, error messages, and documentation, eliminating AI clichés. |
+| **`ux-copy`** | `/ux-copy` | Write and review intentional UX microcopy, error messages, empty states, and high-conversion CTAs. |
+| **`unslop`** | `/unslop` | Polish copy and documentation, aggressively eliminating AI tells and corporate filler. |
 | **`writing-beats`** | `/writing-beats` | Sequence complex user flow narratives beat-by-beat, screen-by-screen. |
 | **`writing-fragments`** | `/writing-fragments` | Brainstorm raw microcopy fragments, button labels, and onboarding tips. |
 | **`writing-shape`** | `/writing-shape` | Shape raw copy fragments into cohesive UI strings, modals, and design specs. |
@@ -50,7 +65,7 @@ This repository integrates 35 workspace-installed agent skills purpose-built for
 
 ---
 
-## 4. Agent Lifecycle, Governance & Utility Skills
+## 5. Agent Lifecycle, Governance & Utility Skills
 
 | Skill | Trigger / Command | Purpose |
 |---|---|---|

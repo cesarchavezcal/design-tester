@@ -19,7 +19,7 @@ We have successfully transformed `agent-boilerplate` into a specialized, high-ve
 - **`designs/app.pen` & `designs/design-system.pen`**: Living, validated `.pen` canvas files ready for screen and component drafting.
 - **`docs/design-system/DESIGN.md`**: Complete framework-neutral design token specifications.
 
-### 3. Dedicated Skills Library (36 Skills)
+### 3. Dedicated Skills Library (50 Skills)
 - **10 Core Pen Dev Design Skills**:
   - `pen-dev` (Core canvas engine & schema)
   - `pen-ui-design` (High-fidelity screens)
@@ -31,6 +31,17 @@ We have successfully transformed `agent-boilerplate` into a specialized, high-ve
   - `pen-screen-by-screen` (5-phase behavioral state progression)
   - `pen-branding` (Brand identity & typography pairings)
   - `pen-illustrations` (Native SVG vector artwork)
+- **14 Agency Aesthetics & Design Intelligence Skills**:
+  - `ui-ux-pro-max` (84 styles, 192 palettes, 74 font pairings, 98 UX rules, 44x44px touch targets)
+  - `high-end-visual-design` (Double-bezel hardware enclosures, island CTA buttons, zero AI cliches)
+  - `impeccable` (Heuristic design critique, `/bolder`, `/quieter`, `/harden`, `/polish`, `/audit`)
+  - `brandkit` (Studio brand-guidelines boards, logo systems, sparse luxury decks)
+  - `minimalist-ui` (Warm monochrome palette, typographic contrast, flat bento grids)
+  - `industrial-brutalist-ui` (Swiss print meets military terminal aesthetics)
+  - `design-taste-frontend` & `design-taste-frontend-v1` (Anti-slop frontend design system engine)
+  - `stitch-design-taste` (Semantic token engine for design systems)
+  - `ux-copy` (Intentional microcopy, action verbs, empathetic error recovery)
+  - `gpt-taste`, `image-to-code`, `imagegen-frontend-web`, `imagegen-frontend-mobile`, `redesign-existing-projects`
 - **26 Retained Discovery, Planning & Lifecycle Skills**:
   - `product-function`, `information-architecture-review`, `ooux`, `product-description`, `grill-me`, `grilling`, `grill-with-docs`, `unslop`, `i-have-adhd`, `research`, `domain-modeling`, `prototype`, `writing-beats`, `writing-fragments`, `writing-shape`, `writing-for-agents`, `to-questionnaire`, `handoff`, `claude-handoff`, `ask-matt`, `wayfinder`, `wait-what`, `loop-me`, `pr`, `retro`, `init-project`.
 
@@ -39,7 +50,7 @@ We have successfully transformed `agent-boilerplate` into a specialized, high-ve
 - **`scripts/setup-project.sh`**: Project onboarding wizard that populates `GLOSSARY.md`, `DESIGN.md`, and sets up initial viewports.
 - **`scripts/export-previews.sh`**: Screen preview exporter saving high-resolution PNGs to `docs/previews/`.
 
-### 5. GitHub Template Repository Published
+### 5. GitHub Template Repository Published & Synced
 - **Remote**: [`https://github.com/cesarchavezcal/pen-dev-designer`](https://github.com/cesarchavezcal/pen-dev-designer)
 - **Template Status**: Enabled (`isTemplate: true`).
 - **One-Prompt Setup Command**:
@@ -61,3 +72,4 @@ We have successfully transformed `agent-boilerplate` into a specialized, high-ve
    - Automated placeholder replacement verified.
 3. **GitHub Remote & Template Verification**:
    - `gh repo view cesarchavezcal/pen-dev-designer --json isTemplate` returned `true`.
+

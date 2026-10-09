@@ -6,7 +6,7 @@ This file defines the primary operational rules, canvas lifecycle, and design pi
 
 ## ⚡ Core Pen Dev Canvas Invariants (MANDATORY)
 
-All agents operating in this repository MUST strictly follow these 4 canvas execution invariants:
+All agents operating in this repository MUST strictly follow these 6 canvas execution invariants:
 
 1. **Document Root Cleanliness**:
    - The top-level `document` container is strictly reserved for **Screen Frames**, **User Flow Container Boards**, and **Reusable Component Symbols** (`reusable: true`).
@@ -28,6 +28,16 @@ All agents operating in this repository MUST strictly follow these 4 canvas exec
    - Screen frames instantiate them using `type: "ref"`, `ref: "<component_id>"`, with custom text and styling overridden in `descendants`.
    - For multi-step user flows, **never recreate identical screens from scratch**. Clone the preceding screen with `Copy(screen1Id, document)` and modify only the delta interaction state (typed text, open sheet, active toast).
 
+5. **Agency-Tier Visual Craft (`high-end-visual-design`)**:
+   - **Banned AI Cliches**: Avoid flat 1px gray borders, generic card-inside-card nesting without purpose, and boring 3-column Bootstrap-style symmetry.
+   - **The Double-Bezel Enclosure**: Outer shell frame (`fill: "rgba(255,255,255,0.05)"`, `padding: 6`, `cornerRadius: 24`) enclosing an inner core card (`cornerRadius: 18`) with high contrast and depth.
+   - **Nested CTA / Island Buttons**: Interactive buttons must use pill or generous radius styling. Trailing arrow/action icons must be nested inside their own distinct circular frame wrapper flush with the button's inner padding.
+   - **Spatial Rhythm**: Generous vertical section padding (`py: 24` to `48px` on mobile, `64` to `120px` on desktop) allowing layouts to breathe.
+
+6. **Accessibility & Touch Target Standards (`ui-ux-pro-max`)**:
+   - **Minimum Touch Targets**: All interactive buttons, icon hits, and form fields on mobile viewports MUST be at least `44 x 44px` with a minimum `8px` spacing buffer.
+   - **WCAG Contrast**: Text contrast against backgrounds must strictly exceed 4.5:1. Never use gray-on-gray or muted text for primary data values.
+
 ---
 
 ## 0. Session-Start Onboarding & Auto-Detection
@@ -40,7 +50,7 @@ Whenever an agent session starts:
      - Project Name & Mission
      - Target Platforms (Web, Mobile iOS/Android, Desktop)
      - Brand Archetype (Blueprint Technical, Modern Minimal, Bold Editorial, etc.)
-     - Primary Palette & Typography preferences
+     - Primary Palette & Typography preferences (can query `/ui-ux-pro-max` for curated palettes and font pairings)
    - Populate `GLOSSARY.md`, `MEMORY.md`, and `docs/design-system/DESIGN.md`.
    - Initialize baseline canvas files in `designs/` and seed `feature_list.json`.
 
@@ -62,9 +72,10 @@ This repository operates under **ADHD communication guidelines by default**:
 
 ```mermaid
 flowchart TD
-    subgraph Inputs ["1. Discovery & Scoping"]
+    subgraph Inputs ["1. Discovery & Design Intelligence"]
         STORY["User Story / PRD / Planning Doc"]
         PF["/product-function (Scope y = f(x))"]
+        UIPRO["/ui-ux-pro-max (Palettes & UX Rules)"]
         IA["/information-architecture (Sitemap & Flows)"]
         OOUX["/ooux (Objects, Content & Cards)"]
         PD["/product-description (5 Behavioral States)"]
@@ -72,38 +83,40 @@ flowchart TD
 
     subgraph CanvasPrep ["2. Spatial & Structural Validation"]
         WF["/pen-wireframing (Blueprint Technical Style)"]
-        DS["/pen-design-system (Tokens & Reusable Components)"]
+        DS["/pen-design-system (Tokens & Double-Bezel Symbols)"]
         COMP["/pen-story-components (Story-Driven Components)"]
+        COPY["/ux-copy & /unslop (Microcopy & Empty States)"]
     end
 
     subgraph HighFi ["3. Production Screens & User Flows"]
         UI["/pen-ui-design (High-Fidelity UI Screens)"]
         FLOW["/pen-user-flows (Screen-by-Screen Connected Flows)"]
-        BRAND["/pen-branding (Identity & Typography)"]
+        BRAND["/pen-branding & /brandkit (Identity & Decks)"]
         ILLUST["/pen-illustrations (SVG Vector Art)"]
         PROTO["/pen-prototyping (Interactive State Variants)"]
     end
 
-    subgraph Delivery ["4. Verification & Delivery"]
+    subgraph Delivery ["4. Critique, Verification & Delivery"]
+        CRIT["/impeccable (critique, audit, polish, bolder/quieter)"]
         INIT["./init.sh (Canvas Health Check)"]
         EXP["scripts/export-previews.sh (Export PNGs)"]
         WALK["Walkthrough Artifact & Pull Request"]
     end
 
-    STORY --> PF --> IA --> OOUX --> PD
-    PD --> WF --> DS --> COMP
-    COMP --> UI & FLOW & BRAND & ILLUST & PROTO
-    UI & FLOW & BRAND & ILLUST & PROTO --> INIT --> EXP --> WALK
+    STORY --> PF --> UIPRO --> IA --> OOUX --> PD
+    PD --> WF --> DS --> COMP --> COPY
+    COMP & COPY --> UI & FLOW & BRAND & ILLUST & PROTO
+    UI & FLOW & BRAND & ILLUST & PROTO --> CRIT --> INIT --> EXP --> WALK
 ```
 
 ### The 7 Canonical Design Phases:
-1. **Phase 1: Feature Scoping**: Scope inputs and outputs ($y = f(x)$) using `/product-function`. Strip 90% scope bloat.
+1. **Phase 1: Feature Scoping & Intelligence**: Scope inputs and outputs ($y = f(x)$) using `/product-function`. Query `/ui-ux-pro-max` for curated design styles, color palettes, and touch rules.
 2. **Phase 2: Information Architecture & OOUX**: Map sitemaps with `/information-architecture` and extract object card anatomy with `/ooux`.
 3. **Phase 3: Behavioral State Mapping**: Map the 5 interaction states (Entry ➔ Resting ➔ Active ➔ Feedback ➔ Exit) using `/product-description`.
 4. **Phase 4: Blueprint Wireframing**: Generate low-fidelity structural wireframes on canvas using the `Blueprint Technical` archetype (`/pen-wireframing`) to validate layout hierarchy before visual polish.
-5. **Phase 5: Design System & Story Components**: Define tokens and build reusable UI components (`reusable: true`, slots) with `/pen-design-system` and `/pen-story-components`.
-6. **Phase 6: High-Fi UI & Screen-by-Screen Flows**: Render production screens (`/pen-ui-design`) and connect full UI interaction states with directional vector arrows and action gesture badges (`/pen-user-flows`).
-7. **Phase 7: Verification & Preview Delivery**: Run `./init.sh`, export high-res PNG/PDF previews with `scripts/export-previews.sh`, and generate a walkthrough artifact.
+5. **Phase 5: Design System & Story Components**: Define tokens and build reusable UI components (`reusable: true`, double-bezel enclosures, island buttons) with `/pen-design-system` and `/pen-story-components`, polished with `/ux-copy`.
+6. **Phase 6: High-Fi UI & Screen-by-Screen Flows**: Render production screens (`/pen-ui-design`) and connect full UI interaction states with directional vector arrows and action gesture badges (`/pen-user-flows`), accompanied by `/brandkit` guidelines and `/pen-illustrations`.
+7. **Phase 7: Critique, Verification & Preview Delivery**: Run `/impeccable` (`critique`, `audit`, `polish`), verify canvas health with `./init.sh`, export high-res PNG/PDF previews with `scripts/export-previews.sh`, and generate a walkthrough artifact.
 
 ---
 
