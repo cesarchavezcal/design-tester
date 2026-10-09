@@ -2,26 +2,26 @@
   "features": [
     {
       "id": "feat-001",
-      "name": "Design Project Onboarding & Setup",
-      "description": "Interview project concept, define brand archetype, set up design tokens in docs/design-system/DESIGN.md, and initialize designs/ canvas files.",
+      "name": "CraftUI Studio Onboarding & Architecture",
+      "description": "Define project mission, target viewports (Desktop 1440x900, Mobile 393x852), Modern Minimal archetype, and theme tokens in GLOSSARY.md, MEMORY.md, and docs/design-system/DESIGN.md.",
       "dependencies": [],
-      "status": "not-started",
-      "evidence": ""
+      "status": "complete",
+      "evidence": "Completed /init-project onboarding; GLOSSARY.md, MEMORY.md, and DESIGN.md configured for CraftUI Studio."
     },
     {
       "id": "feat-002",
-      "name": "Foundational Design System & Theme Variables",
-      "description": "Establish color palette, typography scales, spacing tokens, and core reusable UI components (Buttons, Inputs, Cards, Nav) in designs/design-system.pen.",
+      "name": "Foundational Commercial Design System & Theme Tokens",
+      "description": "Establish electric indigo/cyan palette, typography scale, and reusable master component symbols (Buttons, Inputs, Metric Cards, Pricing Table, Navbars) in designs/design-system.pen.",
       "dependencies": [
         "feat-001"
       ],
-      "status": "not-started",
-      "evidence": ""
+      "status": "complete",
+      "evidence": "Implemented 5 master component boards in designs/design-system.pen: Theme Tokens & Instrument Panel, Island CTA & Buttons, Technical Forms & Inputs, Double-Bezel Hardware Cards, and Navigation Rails & Overlays. Verified zero clipping with ./init.sh and exported preview assets to docs/previews/."
     },
     {
       "id": "feat-003",
-      "name": "First User Flow Blueprint Wireframe",
-      "description": "Convert initial planning doc/user story into a low-fidelity Blueprint Technical wireframe to validate structural layout before visual polish.",
+      "name": "Template 1: Modern SaaS Analytics Dashboard (Desktop 1440x900)",
+      "description": "Design blueprint wireframe and production high-fidelity SaaS dashboard with sidebar nav, KPI metric cards, data chart slots, and activity tables.",
       "dependencies": [
         "feat-002"
       ],
@@ -30,19 +30,20 @@
     },
     {
       "id": "feat-004",
-      "name": "High-Fidelity Screen-by-Screen User Flow",
-      "description": "Generate full UI screens for each interaction step, complete with directional connector arrows, gesture tags, and decision branches.",
+      "name": "Template 2: FinTech & Crypto Mobile App Flow (iOS 393x852)",
+      "description": "Author screen-by-screen mobile user flow with delta cloning, wallet balance, transaction history, bottom sheet transfer modal, and interaction badges.",
       "dependencies": [
-        "feat-003"
+        "feat-002"
       ],
       "status": "not-started",
       "evidence": ""
     },
     {
       "id": "feat-005",
-      "name": "Interactive Prototype States & Preview Export",
-      "description": "Model interactive component states (hover, active, sheet open, error toast) and export high-res PNG/PDF previews to docs/previews/.",
+      "name": "Template 3: Portfolio Showcase & Marketplace Landing Page",
+      "description": "Design commercial marketing landing page featuring hero showcase, live template preview grids, pricing cards, and export high-resolution assets to docs/previews/.",
       "dependencies": [
+        "feat-003",
         "feat-004"
       ],
       "status": "not-started",
