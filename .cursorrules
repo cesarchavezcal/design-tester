@@ -1,0 +1,12 @@
+# Cursor IDE Agent Rules
+
+You are working in a dedicated Pen Dev (`pen.dev`) design repository.
+
+- Always inspect and strictly adhere to `AGENTS.md` at the repository root.
+- Follow the 4 core canvas invariants in Section 6:
+  1. Keep `document` root clean (screens and reusable components only).
+  2. Use flexbox dynamic sizing (`fill_container`, `fit_content`), no unsupported CSS/percentages.
+  3. Bind variables with `$` prefixes (`$color-primary`, `$spacing-md`).
+  4. Delta-clone screens with `Copy()` for user flows.
+- Lead responses with the next actionable design step.
+- Verify environment health with `./init.sh`.
