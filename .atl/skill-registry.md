@@ -1,6 +1,6 @@
 # Pen Dev Design Agent Skill Registry (`.atl/skill-registry.md`)
 
-This registry lists all 36 skills installed in this template repository across design, product discovery, UX writing, and agent lifecycle categories.
+This registry indexes all 44 skills available in this repository across native design, design intelligence, aesthetic agency standards, product discovery, UX writing, and agent lifecycle categories.
 
 ---
 
@@ -21,7 +21,21 @@ This registry lists all 36 skills installed in this template repository across d
 
 ---
 
-## 2. Product Discovery, Architecture & UX Skills (8 Skills)
+## 2. Design Intelligence & Agency Aesthetics (7 Skills)
+
+| Skill | Trigger / Command | Description |
+|---|---|---|
+| [`ui-ux-pro-max`](file:///Users/cesaradalbertochavezcalderon/Personal/pen-dev-designer/.agents/skills/ui-ux-pro-max/SKILL.md) | `/ui-ux-pro-max` | Local database of 84 styles, 192 palettes, 74 font pairings, 98 UX guidelines, min 44x44px touch targets. |
+| [`high-end-visual-design`](file:///Users/cesaradalbertochavezcalderon/Personal/pen-dev-designer/.agents/skills/high-end-visual-design/SKILL.md) | `/high-end-visual-design` | Agency standards: double-bezel cards, nested island CTA buttons, bans generic AI styling. |
+| [`brandkit`](file:///Users/cesaradalbertochavezcalderon/Personal/pen-dev-designer/.agents/skills/brandkit/SKILL.md) | `/brandkit` | Studio-grade brand guidelines boards, logo construction grids, and sparse typography. |
+| [`impeccable`](file:///Users/cesaradalbertochavezcalderon/Personal/pen-dev-designer/.agents/skills/impeccable/SKILL.md) | `/impeccable` | Heuristic design review and refinement: `/critique`, `/audit`, `/bolder`, `/quieter`, `/polish`. |
+| [`design-taste-frontend`](file:///Users/cesaradalbertochavezcalderon/Personal/pen-dev-designer/.agents/skills/design-taste-frontend/SKILL.md) | `/design-taste-frontend` | Anti-slop frontend taste engine ensuring distinct, non-templated layouts. |
+| [`minimalist-ui`](file:///Users/cesaradalbertochavezcalderon/Personal/pen-dev-designer/.agents/skills/minimalist-ui/SKILL.md) | `/minimalist-ui` | Warm monochrome palette, high typographic contrast, and flat bento layouts. |
+| [`industrial-brutalist-ui`](file:///Users/cesaradalbertochavezcalderon/Personal/pen-dev-designer/.agents/skills/industrial-brutalist-ui/SKILL.md) | `/industrial-brutalist-ui` | Swiss typographic print, declassified blueprints, and rigid technical density. |
+
+---
+
+## 3. Product Discovery, Architecture & UX Skills (8 Skills)
 
 | Skill | Trigger / Command | Description |
 |---|---|---|
@@ -36,11 +50,12 @@ This registry lists all 36 skills installed in this template repository across d
 
 ---
 
-## 3. UX Copy & Communication Skills (6 Skills)
+## 4. UX Copy, Microcopy & Communication Skills (7 Skills)
 
 | Skill | Trigger / Command | Description |
 |---|---|---|
-| [`unslop`](file:///Users/cesaradalbertochavezcalderon/Personal/pen-dev-designer/.agents/skills/unslop/SKILL.md) | `/unslop` | Polish UX copy, empty states, and documentation, removing AI tells. |
+| [`ux-copy`](file:///Users/cesaradalbertochavezcalderon/Personal/pen-dev-designer/.agents/skills/ux-copy/SKILL.md) | `/ux-copy` | Write and review intentional UX microcopy, error recovery, and empty states. |
+| [`unslop`](file:///Users/cesaradalbertochavezcalderon/Personal/pen-dev-designer/.agents/skills/unslop/SKILL.md) | `/unslop` | Polish copy and documentation, removing AI tells. |
 | [`writing-beats`](file:///Users/cesaradalbertochavezcalderon/Personal/pen-dev-designer/.agents/skills/writing-beats/SKILL.md) | `/writing-beats` | Sequence complex user flow narratives beat-by-beat. |
 | [`writing-fragments`](file:///Users/cesaradalbertochavezcalderon/Personal/pen-dev-designer/.agents/skills/writing-fragments/SKILL.md) | `/writing-fragments` | Brainstorm raw microcopy fragments and empty states. |
 | [`writing-shape`](file:///Users/cesaradalbertochavezcalderon/Personal/pen-dev-designer/.agents/skills/writing-shape/SKILL.md) | `/writing-shape` | Shape raw copy fragments into cohesive UI strings. |
@@ -49,7 +64,7 @@ This registry lists all 36 skills installed in this template repository across d
 
 ---
 
-## 4. Agent Lifecycle & Workflow Skills (12 Skills)
+## 5. Agent Lifecycle, Governance & Utility Skills (12 Skills)
 
 | Skill | Trigger / Command | Description |
 |---|---|---|
