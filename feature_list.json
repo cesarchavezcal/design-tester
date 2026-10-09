@@ -15,8 +15,8 @@
       "dependencies": [
         "feat-001"
       ],
-      "status": "not-started",
-      "evidence": ""
+      "status": "complete",
+      "evidence": "Implemented 5 master component boards in designs/design-system.pen: Theme Tokens & Instrument Panel, Island CTA & Buttons, Technical Forms & Inputs, Double-Bezel Hardware Cards, and Navigation Rails & Overlays. Verified zero clipping with ./init.sh and exported preview assets to docs/previews/."
     },
     {
       "id": "feat-003",
